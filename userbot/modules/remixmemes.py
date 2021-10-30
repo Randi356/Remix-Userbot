@@ -2979,7 +2979,7 @@ async def _(event):
 
 
 CMD_HELP.update({
-    "kingmemes":
+    "remixmemes":
     "⚡𝘾𝙈𝘿⚡`.eye`\
 \nUsage: Lihat Sendiri.\
 \n\n⚡𝘾𝙈𝘿⚡`.earth`\
