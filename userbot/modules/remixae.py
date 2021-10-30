@@ -1,5 +1,5 @@
 # Based Plugins
-# Ported for King-Userbot By liualvinas/Alvin Bau Sawi
+# Ported for Remix-Userbot By kontol/memek
 
 from telethon import events
 from userbot.events import register
