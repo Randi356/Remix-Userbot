@@ -55,8 +55,8 @@ urbandict>=0.5
 wikipedia>=1.4.0
 coffeehouse>=2.1.0
 gitpython
-git+https://github.com/TomyPrs/deezloader
-git+https://github.com/Ncode2014/search-engine-parser
+git+https://github.com/Randi356/deezloader
+git+https://github.com/Randi356/search-engine-parser
 lyricsgenius
 PyDrive2
 pyDownload
@@ -73,8 +73,8 @@ pyfiglet
 jotquote
 html_telegraph_poster
 csvfaker
-git+https://github.com/LonamiWebs/Telethon
-git+https://github.com/ahupp/python-magic
+git+https://github.com/Randi356/Telethon
+git+https://github.com/Randi356/python-magic
 pytube>=9.5.1
 pymongo[srv]
 youtube-dl>=2021.1.8
