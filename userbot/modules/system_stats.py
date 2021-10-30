@@ -169,9 +169,9 @@ async def bot_ver(event):
         await event.edit("`Memeriksa Versi Userbot...`")
         sleep(3)
         await event.edit(
-            " ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ \n\n"
+            " ⚡𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ \n\n"
             f"**★ Versi Userbot :** v{BOT_VER} \n"
-            f"**★ heads :** heads/King-Userbot-0-x634i7u1 \n"
+            f"**★ heads :** heads/Remix-Userbot-0-x634i7u1 \n"
             f"**★ Revisi :** {revout}"
         )
     else:
@@ -180,58 +180,58 @@ async def bot_ver(event):
         )
 
 
-@register(outgoing=True, pattern=r"^\.pip(?: |$)(.*)")
-async def pipcheck(pip):
-    if pip.text[0].isalpha() or pip.text[0] in ("/", "#", "@", "!"):
+@register(outgoing=True, pattern=r"^\.remix(?: |$)(.*)")
+async def pipcheck(remix):
+    if remix.text[0].isalpha() or remix.text[0] in ("/", "#", "@", "!"):
         return
-    pipmodule = pip.pattern_match.group(1)
-    if pipmodule:
-        await pip.edit("`Sedang Mencari...`")
-        pipc = await asyncrunapp(
-            "pip3",
+    remixmodule = remix.pattern_match.group(1)
+    if remixmodule:
+        await remix.edit("`Sedang Mencari...`")
+        remixc = await asyncrunapp(
+            "remix3",
             "search",
-            pipmodule,
+            remixmodule,
             stdout=asyncPIPE,
             stderr=asyncPIPE,
         )
 
-        stdout, stderr = await pipc.communicate()
-        pipout = str(stdout.decode().strip()) + str(stderr.decode().strip())
+        stdout, stderr = await remixc.communicate()
+        remixout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
-        if pipout:
-            if len(pipout) > 4096:
-                await pip.edit("`Output Terlalu Besar, Dikirim Sebagai File`")
+        if remixout:
+            if len(remixout) > 4096:
+                await remix.edit("`Output Terlalu Besar, Dikirim Sebagai File`")
                 file = open("output.txt", "w+")
-                file.write(pipout)
+                file.write(remixout)
                 file.close()
-                await pip.client.send_file(
-                    pip.chat_id,
+                await remix.client.send_file(
+                    remix.chat_id,
                     "output.txt",
-                    reply_to=pip.id,
+                    reply_to=remix.id,
                 )
                 remove("output.txt")
                 return
-            await pip.edit(
+            await remix.edit(
                 "**Query :** \n"
-                f"pip3 dicari `{pipmodule}` \n"
-                f"**Result :** `{pipout}`"
+                f"pip3 dicari `{remixmodule}` \n"
+                f"**Result :** `{remixout}`"
             )
         else:
-            await pip.edit(
+            await remix.edit(
                 "**Query :** \n"
-                f"pip3 dicari {pipmodule} \n"
+                f"remix3 dicari {remixmodule} \n"
                 "**Result :** `Tidak Ada Hasil Kembali`"
             )
     else:
-        await pip.edit("**Harap Gunakan** `.help pip` **Untuk Melihat Contoh**")
+        await remix.edit("**Harap Gunakan** `.help remix` **Untuk Melihat Contoh**")
 
 
-@register(outgoing=True, pattern=r"^\.(?:kingalive|kingon)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:hackalive|kingon)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"┗┓★ ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ★┏┛\n"
+        f"┗┓★ ⚡𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ★┏┛\n"
         f"\n__**{KING_TEKS_KUSTOM}**__\n"
         f"**━━━━━━━━━━━━━━━━━━━━━**\n"
         f"★ ** King ** \n"
@@ -244,9 +244,9 @@ async def amireallyalive(alive):
         f"|✶ 👾 `Versi Userbot  :` v{BOT_VER} \n"
         f"|✶ 📂 `Plugins        :` {len(plugins)} Plugin\n"
         f"╰╼━━━━━━━━━━━━━━━━━━━━━\n"
-        f"• **Copyright :** [King Userbot Company LLC](https://github.com/apisuserbot/King-Userbot) \n"
-        f"• **License :** [Raphielscape Version 1.d](https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE) \n"
-        f"• **Support :** [USERBOT TELEGRAM](https://t.me/KingUserbotSupport) ")
+        f"• **Copyright :** [Remix Userbot Company LLC](https://github.com/Randi356/Remix-Userbot) \n"
+        f"• **License :** [Raphielscape Version 1.d](https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE) \n"
+        f"• **Support :** [USERBOT TELEGRAM](https://t.me/StaryWild) ")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -272,7 +272,7 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"  𝗫 ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ 𝗫 \n"
+        f"  𝗫 ⚡𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ 𝗫 \n"
         f"╭━━━━━━━━━━━━━━━━━━━━━╮\n"
         f"╟ 🤴 KING     : {DEFAULTUSER}\n"
         f"╟ 🔎 Username : @{user.username}\n"
@@ -283,9 +283,9 @@ async def amireallyalive(alive):
         f"╟◈ 🛠 `Version  :` v{BOT_VER} \n"
         f"╟◈ 📂 `Plugins  :` {len(plugins)} Plugin \n"
         f"▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n"
-        f"• **Copyright :** [King Userbot Company LLC](https://github.com/apisuserbot/King-Userbot) \n"
-        f"• **License :** [Raphielscape Version 1.d](https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE) \n"
-        f"• **Support :** [USERBOT TELEGRAM](https://t.me/KingUserbotSupport) \n"
+        f"• **Copyright :** [Remix Userbot Company LLC](https://github.com/Randi356/Remix-Userbot) \n"
+        f"• **License :** [Raphielscape Version 1.d](https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE) \n"
+        f"• **Support :** [USERBOT TELEGRAM](https://t.me/StaryWild) \n"
         f"━━━━━━━━━━━━━━━━━━━━━╯")
     if ALIVE_LOGO:
         try:
@@ -326,12 +326,12 @@ async def redis(alive):
     await asyncio.sleep(3)
     output = (
         f"**╭╼══════════════════╾╮**\n"
-        f" ㅤ    ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡    \n"
+        f" ㅤ    ⚡𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡    \n"
         f"**╰╼══════════════════╾╯**\n"
         f"╭╼════════════════════╾╮ \n"
         f"│  ⇱ **SISTEM ALIVE USERBOT** ⇲ \n"
         f"┟╼════════════════════╾┤ \n"
-        f"╟◈ 🤴 `King     :` {DEFAULTUSER} \n"
+        f"╟◈ 🤴 `Remix     :` {DEFAULTUSER} \n"
         f"╟◈ 🔎 `Username :` @{user.username} \n"
         f"╟◈ ⚙️ `Telethon :` v.{version.__version__} \n"
         f"╟◈ 🐍 `Python   :` v.{python_version()} \n"
@@ -343,8 +343,8 @@ async def redis(alive):
         f"│                         \n"
         f"│   **USERBOT TELEGRAM**  \n"
         f"╰╼════════════════════╾╯ \n"
-        f"[License](https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE) | [Support Chat](t.me/KingUserbotSupport) | "
-        f"[Support Channel](t.me/TeamKingUserbot)")
+        f"[License](https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE) | [Support Chat](t.me/StaryWild) | "
+        f"[Support Channel](t.me/githubxsvshacker)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -365,7 +365,7 @@ async def redis(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:ualive|uon)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:haclive|uon)\s?(.)?")
 async def redis(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
@@ -374,14 +374,14 @@ async def redis(alive):
     await alive.edit("⚡")
     await asyncio.sleep(3)
     output = (
-        f"★ [King-Userbot](https://github.com/apisuserbot/King-Userbot) **Running Userbot Active!** ★\n\n"
+        f"★ [Remix-Userbot](https://github.com/Randi356/Remix-Userbot) **Running Userbot Active!** ★\n\n"
         f"__**{KING_TEKS_KUSTOM}**__\n\n"
-        f"{ALIVE_EMOJI} **King :** `{DEFAULTUSER}` \n"
+        f"{ALIVE_EMOJI} **Remix :** `{DEFAULTUSER}` \n"
         f"{ALIVE_EMOJI} **Plugins :** `{len(plugins)} Plugin` \n"
         f"{ALIVE_EMOJI} **Userbot Version :** `v{BOT_VER}` \n"
         f"{ALIVE_EMOJI} **Python Version :** `v{python_version()}` \n"
         f"{ALIVE_EMOJI} **Telethon Version :** `v{version.__version__}` \n\n"
-        f"[Support Chat](https://t.me/KingUserbotSupport) | [Support Channel](https://t.me/TeamKingUserbot) | [License](https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE)")
+        f"[Support Chat](https://t.me/StaryWild) | [Support Channel](https://t.me/githubxsvshacker) | [License](https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -409,8 +409,8 @@ async def alive(event):  # created by Apis
     await event.edit("__Userbot Aktif...__")
     await asyncio.sleep(3)
     text = (
-        f" **King-Userbot | Telethon** \n\n"
-        f"{ALIVE_EMOJI} **King :** __{DEFAULTUSER}__ \n"
+        f" **Remix-Userbot | Telethon** \n\n"
+        f"{ALIVE_EMOJI} **Remix :** __{DEFAULTUSER}__ \n"
         f"{ALIVE_EMOJI} **Plugins :** __{len(plugins)} Plugin__ \n"
         f"{ALIVE_EMOJI} **Versi Userbot :** __v{BOT_VER}__ \n"
         f"{ALIVE_EMOJI} **Versi Python :** __v{python_version()}__ \n"
@@ -467,11 +467,11 @@ CMD_HELP.update(
         \n\n  •  **Perintah :** `.resetalive`\
         \n  •  **Function : **Untuk Mereset Pengguna Alive\
         \n\n\n  **Animasi Alive Lainnya :**\
-        \n\n  •  **Perintah :** `.kingalive` atau `.kingon`\
+        \n\n  •  **Perintah :** `.hackalive` atau `.kingon`\
         \n  •  **Function : **Untuk Melihat Animasi Alive\
         \n\n  •  **Perintah :** `.xalive` atau `.xon`\
         \n  •  **Function : **Untuk Melihat Animasi Alive\
-        \n\n  •  **Perintah :** `.ualive` atau `.uon`\
+        \n\n  •  **Perintah :** `.haclive` atau `.uon`\
         \n  •  **Function : **Untuk Melihat Animasi Alive\
         \n\n  •  **Perintah :** `.boton`\
         \n  •  **Function : **Animasi Alive Tetapi Tidak Ada Logo\
