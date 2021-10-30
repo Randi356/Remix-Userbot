@@ -11,7 +11,7 @@ RUN git clone -b Remix-Userbot https://github.com/Randi356/Remix-Userbot /home/K
 COPY ./sample_config.env ./config.env* /home/King-Userbot/
 
 #Install python requirements
-RUN pip3 install -r https://raw.githubusercontent.com/apisuserbot/King-Userbot/King-Userbot/requirements.txt
+RUN pip3 install -r https://raw.githubusercontent.com/Randi356/Remix-Userbot/Remix-Userbot/requirements.txt
 WORKDIR /home/King-Userbot/
 
 # Finishim
