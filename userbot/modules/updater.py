@@ -53,7 +53,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU] : Harap Siapkan Vars` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡`'
+                ' untuk dapat deploy perubahan terbaru dari ⚡𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡`'
             )
             repo.__del__()
             return
@@ -63,7 +63,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy ⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡`'
+                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy ⚡𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡`'
             )
             return repo.__del__()
         await event.edit('`[UPDATE DEPLOY] :'
@@ -190,7 +190,7 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ **Sudah Versi Terbaru**\n')
+            f'\n⚡𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ **Sudah Versi Terbaru**\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
