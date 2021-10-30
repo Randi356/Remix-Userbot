@@ -1,6 +1,6 @@
 ## Remix-Userbot
 
-King-Userbot adalah sebuah repository yang di rancang untuk membantu akun pengguna telegram dalam menjalankan aktifitas di dalamnya.
+Remix-Userbot adalah sebuah repository yang di rancang untuk membantu akun pengguna telegram dalam menjalankan aktifitas di dalamnya.
 
 Dengan memiliki berbagai fitur yang menarik dan menyenangkan.
 
@@ -49,23 +49,9 @@ Terimakasih telah menggunakan repository ini!
 Repository Yang Dikelola oleh [Hacker](https://t.me/FlashProSpeed) Dari Berbagai Repository Userbot yang ada di Github 
 
 `
-Userbot digunakan untuk bersenang senang di telegram, ada beberapa fitur yg mungkin dapat membantu kamu tanpa harus mengakses apk lain`
 
-### Cara Deploy 📝
 
-```
-  > Pertama, dapatkan API_KE & API_HASH di my.telegram.org (wajib)
-
-  > Dapatkan Sesi String pada perintah di bawah ini, jalankan di terminal Anda (wajib)
-
-  > Selanjutnya klik Deploy tombol di bawah ini.
-
-  > Isi vars wajib di heroku
-
-  > Akhirnya nyalakan app dan periksa log (pengaturan -> lihat log) nikmati :)
-```
-
-### Group Support 🇮🇩
+### Group Support 🌹
 `
 Klik tombol di bawah untuk join ke group support kami`
    <a href="https://t.me/StaryWild"><img src="https://img.shields.io/badge/Grup%20Support%3F-Remix-green?&style=flat-square?&logo=telegram" width=165px></a></p>
@@ -75,7 +61,7 @@ Klik tombol di bawah untuk join ke group support kami`
 Klik tombol di samping untuk membuat string milikmu`
    [![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://replit.com/@Randi356/StringSession-1#main.py)
 
-### <p align="left">📍 Deploy Remix-Userbot 📍</p>
+### <p align="left">💠 Deploy Remix-Userbot 💠</p>
 `
 Klik tombol dibawah untuk deploy King Userbot milikmu`
 
@@ -84,30 +70,6 @@ Klik tombol dibawah untuk deploy King Userbot milikmu`
 <br>
 </p>
 
-## Kredit
-  Terimakasih untuk 
-
-*   [Alvin](https://github.com/Zora24) - Lord Userbot
-*   [RaphielGang](https://github.com/RaphielGang) - Telegram-Paperplane
-*   [AvinashReddy3108](https://github.com/AvinashReddy3108) - PaperplaneExtended
-*   [Mkaraniya](https://github.com/mkaraniya) & [Dev73](https://github.com/Devp73) - OpenUserBot
-*   [Mr.Miss](https://github.com/keselekpermen69) - UserButt
-*   [adekmaulana](https://github.com/adekmaulana) - ProjectBish
-*   [MoveAngel](https://github.com/MoveAngel) - One4uBot
-*   [Alfianandaa](https://github.com/alfianandaa/ProjectAlf) - ProjectAlf
-*   [AnggaR69s](https://github.com/GengKapak/DCLXVI) - DCLXVI
-*   [kandnub](https://github.com/kandnub) - TG-UserBot
-*   [Sahyam2019](https://github.com/sahyam2019/oub-remix) - oub-remix 
-DAN LAINNYA
-
-
-## Contributor 
-   Team Project Kami
-
-*  [hacker](https://github.com/Randi356) - Developer
-*  [Alvin](https://github.com/Zora24) - Contributor
-*  [Yunus](https://github.com/Yunus-Zend) - Contributor
-*  [Ridho](https://github.com/ridho17-ind) - Contributor
-
+## 
 ## License
 Licensed under [Raphielscape Public License](https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE) - Version 1.d, February 2020
