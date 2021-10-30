@@ -108,7 +108,7 @@ async def set_var(var):
                 "**Mengganti Config Vars**:\n"
                 f"`{variable}` = `{value}`"
             )
-        await var.edit("`Sedang Di Proses King, Mohon Menunggu Dalam Beberapa Detik`")
+        await var.edit("`Sedang Di Proses remix, Mohon Menunggu Dalam Beberapa Detik`")
     else:
         if BOTLOG:
             await var.client.send_message(
@@ -125,7 +125,7 @@ async def set_var(var):
 """
 
 
-@register(outgoing=True, pattern=r"^.kuota(?: |$)")
+@register(outgoing=True, pattern=r"^.usage(?: |$)")
 async def dyno_usage(dyno):
     """
         Get your account Dyno Usage
@@ -181,7 +181,7 @@ async def dyno_usage(dyno):
             AppMinutes = math.floor(AppQuotaUsed % 60)
 
             await dyno.edit(
-                f"★ **INFO KUOTA KING** ★\n╔══════━━━━━━━══════╗ \n"
+                f"★ **INFO KUOTA REMIX** ★\n╔══════━━━━━━━══════╗ \n"
                 f" ➠ **Penggunaan Kuota :** `{app.name}` \n"
                 f"• **Hasil** :  `{AppHours}` **Jam** - `{AppMinutes}` **Menit**\n"
                 f"• **Persen** : `{AppPercentage}`**%**\n"
@@ -190,8 +190,8 @@ async def dyno_usage(dyno):
                 f"• **Sisa** :  `{hours}` **Jam** - `{minutes}` **Menit**\n"
                 f"• **Persen** :  `{percentage}`**%**\n"
                 f"╚══════━━━━━━━══════╝ \n"
-                f"◈ **KING**  : {ALIVE_NAME} \n"
-                f"◈ **REPO** : [King-Userbot](https://github.com/apisuserbot/King-Userbot) \n"
+                f"◈ **REMIX**  : {ALIVE_NAME} \n"
+                f"◈ **REPO** : [Remix-Userbot](https://github.com/Randi356/Remix-Userbot) \n"
             )
             await asyncio.sleep(20)
             await event.delete()
@@ -207,7 +207,7 @@ async def _(dyno):
         return await dyno.reply(
             "`Pastikan Kunci API Heroku Anda, Nama App Anda dikonfigurasi dengan benar di heroku var.`"
         )
-    await dyno.edit("`Sedang Mengambil Logs Anda King`")
+    await dyno.edit("`Sedang Mengambil Logs Anda Remix`")
     with open("logs.txt", "w") as log:
         log.write(app.get_log())
     fd = codecs.open("logs.txt", "r", encoding="utf-8")
@@ -215,17 +215,17 @@ async def _(dyno):
     key = (requests.post("https://nekobin.com/api/documents",
                          json={"content": data}) .json() .get("result") .get("key"))
     url = f"https://nekobin.com/raw/{key}"
-    await dyno.edit(f"`Ini Logs Heroku Anda King :`\n\nPaste Ke: [Nekobin]({url})")
+    await dyno.edit(f"`Ini Logs Heroku Anda Remix :`\n\nPaste Ke: [Nekobin]({url})")
     return os.remove("logs.txt")
 
 
 CMD_HELP.update(
     {
         "heroku": "**✘ Plugin : **`heroku`\
-        \n\n  •  **Perintah :** `.kuota`\
+        \n\n  •  **Perintah :** `.usage`\
         \n  •  **Function : **Check Kouta Dyno Heroku\
         \n\n  •  **Perintah :** `.set var <nama var> <value>`\
-        \n  •  **Function : **Tambahkan Variabel Baru Atau Memperbarui Variabel\n Setelah Menyetel Variabel ⚡️𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️ Akan Di Restart.\
+        \n  •  **Function : **Tambahkan Variabel Baru Atau Memperbarui Variabel\n Setelah Menyetel Variabel ⚡Rҽɱιx-USERBOT⚡️ Akan Di Restart.\
         \n\n  •  **Perintah :** `.get var or .get var <nama var>`\
         \n  •  **Function : **Dapatkan Variabel Yang Ada,Harap Gunakan Di Grup Private Anda! Ini Untuk Mengembalikan Informasi Heroku Pribadi Anda.\
         \n\n  •  **Perintah :** `.del var <nama var>`\
