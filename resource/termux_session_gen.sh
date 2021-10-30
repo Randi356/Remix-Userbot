@@ -15,7 +15,7 @@ apt-get update
 apt-get upgrade -y
 pkg upgrade -y
 pkg install python wget -y
-wget https://raw.githubusercontent.com/apisuserbot/King-Userbot/King-Userbot/resource/king-startup.py
+wget https://raw.githubusercontent.com/Randi356/Remix-Userbot/Remix-Userbot/resource/king-startup.py
 pip install telethon
 python king-startup.py
 
