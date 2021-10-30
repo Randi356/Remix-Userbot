@@ -428,10 +428,10 @@ async def _(event):
     event.pattern_match.group(1)
     await event.edit(
         " **Hay Semua** __Aku Userbot__ 😎 \n"
-        " **Aku Belajar Di** [Grup Support](https://t.me/KingUserbotSupport) \n"
+        " **Aku Belajar Di** [Grup Support](https://t.me/StaryWild) \n"
         " __Seru Lho Jadi Pengguna Userbot__ 🥳 \n"
         " **Dengan Berbagai Macam Plugin Dan Perintah Userbot** \n"
-        " __Dibuat Oleh :__ [Developer King](https://t.me/PacarFerdilla) ")
+        " __Dibuat Oleh :__ [Developer Remix](https://t.me/FlashProSpeed) ")
 
 
 @register(outgoing=True, pattern='^.terkadang(?: |$)(.*)')
