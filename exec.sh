@@ -16,22 +16,22 @@ elif [ ${1} == "-d" ] || [ ${1} == "--daemonize" ] ; then
 	echo -e "I: Running silently in the background like a ninja..."
 	cd ${BOTDIR}
 	. venv/bin/activate
-	nohup python3 -m userbot >>${UNIXTIME}-kingproject.log 2>&1 & echo "I: Userbot PID is ${!}"
+	nohup python3 -m userbot >>${UNIXTIME}-remixproject.log 2>&1 & echo "I: Userbot PID is ${!}"
 	deactivate
 	cd ${RUNDIR}
 	exit 0
 elif [ ${1} == "-h" ] || [ ${1} == "--help" ] ; then
-	echo -e "King-Userbot"
+	echo -e "Remix-Userbot"
 	echo -e  "Licensed under Raphielscape Public License"
 	echo -e "\nUsage:"
 	echo -e "[no arguments] || -x -- Run in the foreground, stdout is the logcat"
-	echo -e "--daemonize    || -d -- Run in the background, logs will be saved in *-kingproject.log"
+	echo -e "--daemonize    || -d -- Run in the background, logs will be saved in *-remixproject.log"
 	exit 0
 else
-	echo -e  "King-Userbot"
+	echo -e  "Remix-Userbot"
         echo -e  "Licensed under Raphielscape Public License"
         echo -e  "\nUsage:"
         echo -e  "[no arguments] || -x -- Run in the foreground, stdout is the logcat"
-        echo -e  "--daemonize    || -d -- Run in the background, logs will be saved in *-kingproject.log"
+        echo -e  "--daemonize    || -d -- Run in the background, logs will be saved in *-remixproject.log"
 	exit 127
 fi
