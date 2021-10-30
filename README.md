@@ -34,6 +34,11 @@ Terimakasih telah menggunakan repository ini!
 <a href="https://hub.docker.com/r/apiskinguserbot/kinguserbot/tags"> <img src="https://img.shields.io/docker/v/apiskinguserbot/kinguserbot/Buster?label=docker%20version&logo=docker&style=for-the-badge" /></a>
 </p>
 
+OWNER
+* 🌹**REMIX**🌹
+[<img src="https://telegra.ph/file/7349ed1159b3dc6af03e4.jpg">](https://t.me/FlashProSpeed)
+
+
 <h4 align="center"> DISCLAIMER </p>
 
 ```
