@@ -1,4 +1,4 @@
-## King-Userbot
+## Remix-Userbot
 
 King-Userbot adalah sebuah repository yang di rancang untuk membantu akun pengguna telegram dalam menjalankan aktifitas di dalamnya.
 
@@ -8,7 +8,6 @@ Bahasa code ini adalah [Python](https://www.python.org/)
 
 Terimakasih telah menggunakan repository ini!
 
-<a href="https://t.me/TeamKingUserbot/16"><img src="https://img.shields.io/badge/Tutorial%20Deploy%3F-King-green?&style=flat-square?&logo=telegram" width=165px></a></p>
 
 
 
@@ -32,7 +31,6 @@ Terimakasih telah menggunakan repository ini!
 <a href="https://www.codefactor.io/repository/github/apisuserbot/king-userbot"><img src="https://www.codefactor.io/repository/github/apisuserbot/king-userbot/badge?style=for-the-badge" alt="CodeFactor" /></a>
 </p>
 
-![King Userbot Logo](https://telegra.ph/file/8eb368517a8d3933c05d9.jpg)
 
 <a href="https://hub.docker.com/r/apiskinguserbot/kinguserbot"> <img src="https://img.shields.io/docker/image-size/apiskinguserbot/kinguserbot/Buster?label=docker%20image%20size&logo=docker&style=for-the-badge" /></a>
 <a href="https://hub.docker.com/r/apiskinguserbot/kinguserbot/tags"> <img src="https://img.shields.io/docker/v/apiskinguserbot/kinguserbot/Buster?label=docker%20version&logo=docker&style=for-the-badge" /></a>
