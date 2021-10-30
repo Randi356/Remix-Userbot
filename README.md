@@ -10,7 +10,7 @@ Terimakasih telah menggunakan repository ini!
 
 <a href="https://t.me/TeamKingUserbot/16"><img src="https://img.shields.io/badge/Tutorial%20Deploy%3F-King-green?&style=flat-square?&logo=telegram" width=165px></a></p>
 
-<a href="https://cooltext.com"><img src="https://images.cooltext.com/5533549.gif" width="802" height="96" alt="King Userbot" /></a>
+
 
 <p align="center">
   <a href="https://github.com/apisuserbot/King-Userbot/fork">
@@ -49,8 +49,8 @@ Terimakasih telah menggunakan repository ini!
   Jangan pernah sekali sekali menyalah gunakan repository ini
 ```
 
-### Repository King Userbot 👑
-Repository Yang Dikelola oleh [Apis](https://t.me/PacarFerdilla) Dari Berbagai Repository Userbot yang ada di Github 
+### Repository Remix Userbot 👑
+Repository Yang Dikelola oleh [Hacker](https://t.me/FlashProSpeed) Dari Berbagai Repository Userbot yang ada di Github 
 
 `
 Userbot digunakan untuk bersenang senang di telegram, ada beberapa fitur yg mungkin dapat membantu kamu tanpa harus mengakses apk lain`
@@ -72,18 +72,18 @@ Userbot digunakan untuk bersenang senang di telegram, ada beberapa fitur yg mung
 ### Group Support 🇮🇩
 `
 Klik tombol di bawah untuk join ke group support kami`
-   <a href="https://t.me/KingUserbotSupport"><img src="https://img.shields.io/badge/Grup%20Support%3F-King-green?&style=flat-square?&logo=telegram" width=165px></a></p>
+   <a href="https://t.me/StaryWild"><img src="https://img.shields.io/badge/Grup%20Support%3F-Remix-green?&style=flat-square?&logo=telegram" width=165px></a></p>
 
 ### String Session 🖇
 `
 Klik tombol di samping untuk membuat string milikmu`
-   [![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://replit.com/@apisuserbot/String-Session?v=1)
+   [![Run on Repl.it](https://repl.it/badge/github/STARKGANG/friday)](https://replit.com/@Randi356/StringSession-1#main.py)
 
-### <p align="left">📍 Deploy King-Userbot 📍</p>
+### <p align="left">📍 Deploy Remix-Userbot 📍</p>
 `
 Klik tombol dibawah untuk deploy King Userbot milikmu`
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/apisuserbot/King-Userbot/tree/King-Userbot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-black?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/apisuserbot/Remix-Userbot/tree/Remix-Userbot"> <img src="https://img.shields.io/badge/Deploy%20Ke%20Heroku-black?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 <br>
 </p>
