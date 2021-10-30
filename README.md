@@ -27,9 +27,7 @@ Terimakasih telah menggunakan repository ini!
 [![GitHub contributors](https://img.shields.io/github/contributors/Randi356/Remix-Userbot?&style=plastic&logo=github)](https://GitHub.com/Randi356/Remix-Userbot/graphs/contributors/)
 <p align="center">
 
-<p align="center">
-<a href="https://www.codefactor.io/repository/github/Randi356/Remix-userbot"><img src="https://www.codefactor.io/repository/github/Randi356/Remix-userbot/badge?style=for-the-badge" alt="CodeFactor" /></a>
-</p>
+
 
 
 <a href="https://hub.docker.com/r/apiskinguserbot/kinguserbot"> <img src="https://img.shields.io/docker/image-size/apiskinguserbot/kinguserbot/Buster?label=docker%20image%20size&logo=docker&style=for-the-badge" /></a>
