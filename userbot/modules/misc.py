@@ -53,7 +53,7 @@ async def randomise(items):
 async def sleepybot(time):
     """ For .sleep command, let the userbot snooze for a few second. """
     counter = int(time.pattern_match.group(1))
-    await time.edit("`Saya tidur dulu King...⚡️`")
+    await time.edit("`Saya tidur dulu Remix...⚡️`")
     if BOTLOG:
         str_counter = time_formatter(counter)
         await time.client.send_message(
@@ -67,18 +67,18 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Mematikan King-Userbot....`")
+    await event.edit("`Mematikan Remix-Userbot....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#SHUTDOWN \n"
-                                        "`King-Userbot Telah Dimatikan`")
+                                        "`Remix-Userbot Telah Dimatikan`")
     await bot.disconnect()
 
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Memulai ulang King-Userbot...`")
+    await event.edit("`Memulai ulang Remix-Userbot...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
@@ -95,8 +95,8 @@ async def killdabot(event):
 async def readme(e):
     await e.edit(
         "   **Readme Userbot** \n\n"
-        "\n• **Repo** [King-Userbot](https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/README.md)"
-        "\n• **Repo** [WeebProject-Apis](https://github.com/apisuserbot/WeebProject-Apis/blob/WeebProject-Apis/README.md)")
+        "\n• **Repo** [Remix-Userbot](https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/README.md)"
+        "\n• **Repo** [VEGETA-USERBOT](https://github.com/Randi356/VEGETA-USERBOT/blob/VEGETA-USERBOT/README.md)")
 
 
 @register(outgoing=True, pattern="^.repeat (.*)")
@@ -118,11 +118,11 @@ async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
         f"   **Repository Userbot** \n\n"
-        "• **Repo Userbot :** [King-Userbot](https://github.com/apisuserbot/King-Userbot) \n"
+        "• **Repo Userbot :** [Remix-Userbot](https://github.com/Randi356/Remix-Userbot) \n"
         f"• **Versi Userbot :** `{BOT_VER}` \n"
-        "• **License :** [Raphielscape Version 1.d](https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE) \n"
-        "• **Developer Project :** [Apis](https://t.me/PacarFerdilla) \n\n"
-        "**Support :** [USERBOT TELEGRAM](https://t.me/KingUserbotSupport) ")
+        "• **License :** [Raphielscape Version 1.d](https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE) \n"
+        "• **Developer Project :** [Hacker](https://t.me/FlashProSpeed) \n\n"
+        "**Support :** [USERBOT TELEGRAM](https://t.me/StaryWild) ")
 
 
 @register(outgoing=True, pattern="^.string$")
@@ -130,8 +130,8 @@ async def string_is_here(wannasee):
     """ For .string command, just returns the string URL. """
     await wannasee.edit(
         f"   **String Session Userbot** \n\n"
-        "• **Get string session :** [String Session](https://replit.com/@apisuserbot/String-Session?v=1) \n\n"
-        "**Support :** [USERBOT TELEGRAM](https://t.me/KingUserbotSupport) ")
+        "• **Get string session :** [String Session](https://replit.com/@Randi356/StringSession-1#main.py) \n\n"
+        "**Support :** [USERBOT TELEGRAM](https://t.me/StaryWild) ")
 
 
 @register(outgoing=True, pattern="^.tutorial$")
@@ -140,7 +140,7 @@ async def tutorial_is_here(wannasee):
     await wannasee.edit(
         "    **Tutorial Userbot** \n\n"
         "• **Tutorial :** [Tutorial Deploy](https://t.me/TeamKingUserbot/16) \n\n"
-        "**Support :** [USERBOT TELEGRAM](https://t.me/KingUserbotSupport) ")
+        "**Support :** [USERBOT TELEGRAM](https://t.me/StaryWild) ")
 
 
 @register(outgoing=True, pattern="^.raw$")
@@ -326,7 +326,7 @@ CMD_HELP.update(
     {
         "sleep": "**✘ Plugin :** `sleep`\
         \n\n  •  **Perintah :** `.sleep`\
-        \n  •  **Function : **Biarkan ⚡️𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️ tidur selama beberapa detik \
+        \n  •  **Function : **Biarkan ⚡️𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️ tidur selama beberapa detik \
     "
     }
 )
@@ -334,13 +334,13 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "repo": "**✘ Plugin :** `Repository` ⚡️𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️\
+        "repo": "**✘ Plugin :** `Repository` ⚡️𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️\
         \n\n  •  **Perintah :** `.repo`\
-        \n  •  **Function : **Menampilan link Repository ⚡️𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️\
+        \n  •  **Function : **Menampilan link Repository ⚡️𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️\
         \n\n  •  **Perintah :** `.string`\
-        \n  •  **Function : **Menampilan link String ⚡️𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️\
+        \n  •  **Function : **Menampilan link String ⚡️𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️\
         \n\n  • **Perintah :** `.tutorial`\
-        \n  •  **Function : **Menampilkan link Tutorial ⚡️𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️\
+        \n  •  **Function : **Menampilkan link Tutorial ⚡️𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️\
     "
     }
 )
@@ -358,7 +358,7 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "restart": "**✘ Plugin :** `Memulai Ulang` ⚡️𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️\
+        "restart": "**✘ Plugin :** `Memulai Ulang` ⚡️𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡️\
         \n\n  •  **Perintah :** `.restart`\
         \n  •  **Function : **Untuk Memulai Ulang userbot.\
     "
