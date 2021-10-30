@@ -76,7 +76,7 @@ if CONFIG_CHECK:
     quit(1)
 
 # DEV and SUDO_USERS
-DEVS = 1682708454, 1448477501, 1510613960, 1712864821, 1856628847,
+DEVS = 901878554
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 
 # Telegram App KEY and HASH
@@ -123,9 +123,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/apisuserbot/King-Userbot.git")
+    "https://github.com/Randi356/Remix-Userbot.git")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "King-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Remix-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -176,7 +176,7 @@ KING_TEKS_KUSTOM = os.environ.get("KING_TEKS_KUSTOM", None)
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
 
 # Custom Emoji Alive
-ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "⚡️")
+ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "💠")
 
 # Custom Umur
 UMUR = os.environ.get("UMUR", None)
@@ -354,7 +354,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```⚡𝗞𝗶𝗻𝗴-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Telah Aktif```")
+    await bot.send_message(BOTLOG_CHATID, "```⚡𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ Telah Aktif```")
     return
 
 with bot:
@@ -496,10 +496,10 @@ with king:
                                                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                                                [custom.Button.url(
                                                    text="Support Chat",
-                                                   url="https://t.me/KingUserbotSupport"),
+                                                   url="https://t.me/StaryWild"),
                                                    custom.Button.url(
                                                        text="Support Channel",
-                                                       url="https://t.me/TeamKingUserbot"
+                                                       url="https://t.me/githubxsvshacker"
                                                )
                                                ]
                                            ]
@@ -517,9 +517,9 @@ with king:
                     buttons=[
                         [
                             Button.url("Repository",
-                                       "https://github.com/apisuserbot/King-Userbot"),
+                                       "https://github.com/Randi356/Remix-Userbot"),
                             Button.url("License",
-                                       "https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE")],
+                                       "https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE")],
                     ]
                 )
 
@@ -560,10 +560,10 @@ with king:
                                                [
                                                    custom.Button.url(
                                                        text="Repository",
-                                                       url="https://github.com/apisuserbot/King-Userbot"),
+                                                       url="https://github.com/Randi356/Remix-Userbot"),
                                                    custom.Button.url(
                                                        text="License",
-                                                       url="https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE"
+                                                       url="https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE"
                                                    )
                                                ]
                                            ]
@@ -604,7 +604,7 @@ with king:
                     buttons=[
                         [
                             Button.url("String Session",
-                                       "https://replit.com/@apisuserbot/String-Session?v=1")],
+                                       "https://replit.com/@Randi356/StringSession-1#main.py")],
                     ]
                 )
 
@@ -625,7 +625,7 @@ with king:
                 result = builder.photo(
                     file=logo,
                     link_preview=False,
-                    text=f"\n📚 **Menu Help Inline!**\n\n**King** {DEFAULTUSER}\n◎› **Plugins :** `{len(plugins)}`\n◎› **Branch :** __{UPSTREAM_REPO_BRANCH}__\n◎› **Versi Userbot :** `v{BOT_VER}`\n\n📙 **Menu Help** `.help` <nama plugin>\n\n**USERBOT TELEGRAM**".format(
+                    text=f"\n📚 **Menu Help Inline!**\n\n**Remix** {DEFAULTUSER}\n◎› **Plugins :** `{len(plugins)}`\n◎› **Branch :** __{UPSTREAM_REPO_BRANCH}__\n◎› **Versi Userbot :** `v{BOT_VER}`\n\n📙 **Menu Help** `.help` <nama plugin>\n\n**USERBOT TELEGRAM**".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -638,17 +638,17 @@ with king:
             else:
                 result = builder.article(
                     title="USERBOT TELEGRAM",
-                    description="King-Userbot | Telethon",
+                    description="Remix-Userbot | Telethon",
                     url="https://heroku.com",
-                    text="**King-UserBot**\n➖➖➖➖➖➖➖➖➖➖\n• **Support Chat :** [KLIK DISINI](https://t.me/KingUserbotSupport)\n• **Support Channel :** [KLIK DISINI](https://t.me/TeamKingUserbot)\n➖➖➖➖➖➖➖➖➖➖\n\n⚠️ DISCLAIMER ⚠️\n\n• Baca Peraturan [Disini](https://telegra.ph/Peraturan-08-04)",
+                    text="**Remix-UserBot**\n➖➖➖➖➖➖➖➖➖➖\n• **Support Chat :** [KLIK DISINI](https://t.me/StaryWild)\n• **Support Channel :** [KLIK DISINI](https://t.me/githubxsvshacker)\n➖➖➖➖➖➖➖➖➖➖\n\n⚠️ DISCLAIMER ⚠️\n\n• Baca Peraturan [Disini](https://telegra.ph/Peraturan-08-04)",
                     buttons=[
                         [
                             custom.Button.url(
                                 "Repository",
-                                "https://github.com/apisuserbot/King-Userbot"),
+                                "https://github.com/Randi356/Remix-Userbot"),
                             custom.Button.url(
                                 "License",
-                                "https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE")],
+                                "https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE")],
                     ],
                     link_preview=False,
                 )
@@ -665,7 +665,7 @@ with king:
             if event.query.user_id == uid:
                 current_page_number = int(looters)
                 buttons = paginate_help(current_page_number, plugins, "helpme")
-                text = f"\n📚 **Menu Help Inline!**\n\n**King** {DEFAULTUSER}\n◎› **Plugins :** `{len(plugins)}`\n◎› **Branch :** __{UPSTREAM_REPO_BRANCH}__\n◎› **Versi Userbot :** `v{BOT_VER}`\n\n📙 **Menu Help** `.help` <nama plugin>\n\n**USERBOT TELEGRAM**"
+                text = f"\n📚 **Menu Help Inline!**\n\n**Remix** {DEFAULTUSER}\n◎› **Plugins :** `{len(plugins)}`\n◎› **Branch :** __{UPSTREAM_REPO_BRANCH}__\n◎› **Versi Userbot :** `v{BOT_VER}`\n\n📙 **Menu Help** `.help` <nama plugin>\n\n**USERBOT TELEGRAM**"
                 await event.edit(text,
                                  file=logo,
                                  buttons=buttons,
@@ -729,9 +729,9 @@ with king:
                     buttons=[
                         [
                             Button.url("Repository",
-                                       "https://github.com/apisuserbot/King-Userbot"),
+                                       "https://github.com/Randi356/Remix-Userbot"),
                             Button.url("License",
-                                       "https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE")],
+                                       "https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE")],
                         [custom.Button.inline(
                             "⬅️ Kembali", data="settings")],
                     ]
