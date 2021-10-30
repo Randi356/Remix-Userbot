@@ -38,7 +38,7 @@ Terimakasih telah menggunakan repository ini!
 
 ```
              ⚠️ PERINGATAN UNTUK ANDA ⚠️ ️
-   King-Userbot digunakan untuk membantu aktifitas akun anda di telegram
+   Rmix-Userbot digunakan untuk membantu aktifitas akun anda di telegram
    Kami tidak bertanggung jawab atas apa yang anda salah gunakan pada repository ini
       ! Hati hati dalam penggunaan pada repository ini !
    Jika salah satu member salah gunakan repository ini , kami terpaksa harus meng gban anda 
@@ -104,7 +104,7 @@ DAN LAINNYA
 ## Contributor 
    Team Project Kami
 
-*  [Apis](https://github.com/apisuserbot) - Developer
+*  [hacker](https://github.com/Randi356) - Developer
 *  [Alvin](https://github.com/Zora24) - Contributor
 *  [Yunus](https://github.com/Yunus-Zend) - Contributor
 *  [Ridho](https://github.com/ridho17-ind) - Contributor
