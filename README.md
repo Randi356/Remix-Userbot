@@ -12,23 +12,23 @@ Terimakasih telah menggunakan repository ini!
 
 
 <p align="center">
-  <a href="https://github.com/apisuserbot/King-Userbot/fork">
-    <img src="https://img.shields.io/github/forks/apisuserbot/King-Userbot?label=Fork&style=social">
+  <a href="https://github.com/Randi356/Remix-Userbot/fork">
+    <img src="https://img.shields.io/github/forks/Randi356/Remix-Userbot?label=Fork&style=social">
     
   </a>
-  <a href="https://github.com/apisuserbot/King-Userbot">
-    <img src="https://img.shields.io/github/stars/apisuserbot/King-Userbot?style=social">
+  <a href="https://github.com/Randi356/Remix-Userbot">
+    <img src="https://img.shields.io/github/stars/Randi356/Remix-Userbot?style=social">
   </a>
 </p>
 
-![Repo Size](https://img.shields.io/github/repo-size/apisuserbot/King-Userbot?&style=plastic&logo=github)
-[![GitHub issues](https://img.shields.io/github/issues/apisuserbot/King-Userbot?&style=plastic&logo=github)](https://github.com/apisuserbot/King-Userbot/issues)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/apisuserbot/King-Userbot?&style=plastic&logo=github)](https://github.com/apisuserbot/King-Userbot/graphs/commit-activity)
-[![GitHub contributors](https://img.shields.io/github/contributors/apisuserbot/King-Userbot?&style=plastic&logo=github)](https://GitHub.com/apisuserbot/King-Userbot/graphs/contributors/)
+![Repo Size](https://img.shields.io/github/repo-size/Randi356/Remix-Userbot?&style=plastic&logo=github)
+[![GitHub issues](https://img.shields.io/github/issues/Randi356/Remix-Userbot?&style=plastic&logo=github)](https://github.com/Randi356/Remix-Userbot/issues)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Randi356/Remix-Userbot?&style=plastic&logo=github)](https://github.com/Randi356/Remix-Userbot/graphs/commit-activity)
+[![GitHub contributors](https://img.shields.io/github/contributors/Randi356/Remix-Userbot?&style=plastic&logo=github)](https://GitHub.com/Randi356/Remix-Userbot/graphs/contributors/)
 <p align="center">
 
 <p align="center">
-<a href="https://www.codefactor.io/repository/github/apisuserbot/king-userbot"><img src="https://www.codefactor.io/repository/github/apisuserbot/king-userbot/badge?style=for-the-badge" alt="CodeFactor" /></a>
+<a href="https://www.codefactor.io/repository/github/Randi356/Remix-userbot"><img src="https://www.codefactor.io/repository/github/Randi356/Remix-userbot/badge?style=for-the-badge" alt="CodeFactor" /></a>
 </p>
 
 
@@ -112,4 +112,4 @@ DAN LAINNYA
 *  [Ridho](https://github.com/ridho17-ind) - Contributor
 
 ## License
-Licensed under [Raphielscape Public License](https://github.com/apisuserbot/King-Userbot/blob/King-Userbot/LICENSE) - Version 1.d, February 2020
+Licensed under [Raphielscape Public License](https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE) - Version 1.d, February 2020
