@@ -76,7 +76,7 @@ async def carbon_api(e):
         e.chat_id,
         file,
         caption="Dibuat menggunakan [Carbon](https://carbon.now.sh/about/),\
-        \nproject userbot by [Developer](https://t.me/PacarFerdilla)",
+        \nproject userbot by [Developer](https://t.me/FlashProSpeed)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -142,7 +142,7 @@ async def carbon_api(e):
         e.chat_id,
         file,
         caption="Dibuat menggunakan [Carbon](https://carbon.now.sh/about/),\
-        \nproject userbot by [Developer](https://t.me/PacarFerdilla)",
+        \nproject userbot by [Developer](https://t.me/FlashProSpeed)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -208,7 +208,7 @@ async def carbon_api(e):
         e.chat_id,
         file,
         caption="Dibuat menggunakan [Carbon](https://carbon.now.sh/about/),\
-        \nproject userbot by [Developer](https://t.me/PacarFerdilla)",
+        \nproject userbot by [Developer](https://t.me/FlashProSpeed)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -274,7 +274,7 @@ async def carbon_api(e):
         e.chat_id,
         file,
         caption="Dibuat menggunakan [Carbon](https://carbon.now.sh/about/),\
-        \nproject userbot by [Developer](https://t.me/PacarFerdilla)",
+        \nproject userbot by [Developer](https://t.me/FlashProSpeed)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
@@ -340,7 +340,7 @@ async def carbon_api(e):
         e.chat_id,
         file,
         caption="Dibuat menggunakan [Carbon](https://carbon.now.sh/about/),\
-        \nproject userbot by [Developer](https://t.me/PacarFerdilla)",
+        \nproject userbot by [Developer](https://t.me/FlashProSpeed)",
         force_document=True,
         reply_to=e.message.reply_to_msg_id,
     )
