@@ -139,7 +139,7 @@ async def tutorial_is_here(wannasee):
     """ For .tutorial command, just returns the tutorial URL. """
     await wannasee.edit(
         "    **Tutorial Userbot** \n\n"
-        "• **Tutorial :** [Tutorial Deploy](https://t.me/TeamKingUserbot/16) \n\n"
+        "• **Tutorial :** [Tutorial Deploy](https://t.me/githubxsvshacker/621) \n\n"
         "**Support :** [USERBOT TELEGRAM](https://t.me/StaryWild) ")
 
 
@@ -290,7 +290,7 @@ async def send(event):
     await event.edit("`Sedang Memproses...`")
 
     if not event.is_reply:
-        return await event.edit("`Mohon Balas ke pesan King!`")
+        return await event.edit("`Mohon Balas ke pesan Remix!`")
 
     chat = event.pattern_match.group(1)
     try:
