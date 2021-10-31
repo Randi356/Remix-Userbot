@@ -180,50 +180,50 @@ async def bot_ver(event):
         )
 
 
-@register(outgoing=True, pattern=r"^\.remix(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.pip(?: |$)(.*)")
 async def pipcheck(remix):
-    if remix.text[0].isalpha() or remix.text[0] in ("/", "#", "@", "!"):
+    if pip.text[0].isalpha() or pip.text[0] in ("/", "#", "@", "!"):
         return
-    remixmodule = remix.pattern_match.group(1)
+    pipmodule = pip.pattern_match.group(1)
     if remixmodule:
         await remix.edit("`Sedang Mencari...`")
         remixc = await asyncrunapp(
-            "remix3",
+            "pip3",
             "search",
             remixmodule,
             stdout=asyncPIPE,
             stderr=asyncPIPE,
         )
 
-        stdout, stderr = await remixc.communicate()
-        remixout = str(stdout.decode().strip()) + str(stderr.decode().strip())
+        stdout, stderr = await pipc.communicate()
+        pipout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
-        if remixout:
-            if len(remixout) > 4096:
-                await remix.edit("`Output Terlalu Besar, Dikirim Sebagai File`")
+        if pipout:
+            if len(pipout) > 4096:
+                await pip.edit("`Output Terlalu Besar, Dikirim Sebagai File`")
                 file = open("output.txt", "w+")
-                file.write(remixout)
+                file.write(pipout)
                 file.close()
-                await remix.client.send_file(
-                    remix.chat_id,
+                await pip.client.send_file(
+                    pip.chat_id,
                     "output.txt",
-                    reply_to=remix.id,
+                    reply_to=pip.id,
                 )
                 remove("output.txt")
                 return
-            await remix.edit(
+            await pip.edit(
                 "**Query :** \n"
-                f"pip3 dicari `{remixmodule}` \n"
-                f"**Result :** `{remixout}`"
+                f"pip3 dicari `{pipmodule}` \n"
+                f"**Result :** `{pipout}`"
             )
         else:
-            await remix.edit(
+            await pip.edit(
                 "**Query :** \n"
-                f"remix3 dicari {remixmodule} \n"
+                f"remix3 dicari {pipmodule} \n"
                 "**Result :** `Tidak Ada Hasil Kembali`"
             )
     else:
-        await remix.edit("**Harap Gunakan** `.help remix` **Untuk Melihat Contoh**")
+        await pip.edit("**Harap Gunakan** `.help pip` **Untuk Melihat Contoh**")
 
 
 @register(outgoing=True, pattern=r"^\.(?:hackalive|kingon)\s?(.)?")
