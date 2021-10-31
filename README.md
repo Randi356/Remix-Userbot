@@ -74,6 +74,13 @@ Klik tombol dibawah untuk deploy Remix Userbot milikmu`
 
 <br>
 </p>
+````````````````````````
+- `⚠️WARNING⚠️`
+````````````````````````
+- `DON'T REMOVE CREDIT`
+````````````````````````
+# ONWER
+- [RENDY](https://github.com/Randi356/Remix-Userbot
 
 # CREDIT
 
@@ -81,4 +88,4 @@ Klik tombol dibawah untuk deploy Remix Userbot milikmu`
 
 ## 
 ## License
-Licensed under [Raphielscape Public License](https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE) - Version 1.d, February 2020
+Licensed under [Public License](https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE) - Version 1.d, February 2020
