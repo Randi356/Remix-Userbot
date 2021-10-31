@@ -51,7 +51,7 @@ OWNER
 ```
 
 ### Repository Remix Userbot 👑
-Repository Yang Dikelola oleh [Hacker](https://t.me/FlashProSpeed) Dari Berbagai Repository Userbot yang ada di Github 
+Repository Yang Dikelola oleh [Remix](https://t.me/FlashProSpeed) Dari Berbagai Repository Userbot yang ada di Github 
 
 `
 
