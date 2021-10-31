@@ -195,7 +195,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "King-Userbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Remix-Userbot")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "0.5.5")
@@ -900,7 +900,7 @@ with remix:
                     f"`.kingalive` || `.kingon` || `.alive` || `.xalive` || `.xon` || `.ualive` || `.uon` \n\n"
                     f"✘ **Set Vars :**\n"
                     f"`.set var ALIVE_LOGO` <link>\n"
-                    f"`.set var KING_TEKS_KUSTOM` <teks>\n"
+                    f"`.set var REMIX_TEKS_KUSTOM` <teks>\n"
                     f"`.set var ALIVE_LOGO None` <tidak memakai pic/foto>")
                 await event.edit(
                     text,
@@ -929,7 +929,7 @@ with remix:
                     f"✘ **Penjelasan :**\n"
                     f"__Untuk Pesan Pribadi (Pmpermit) Kamu , Dan Bisa Set Dengan Foto Dan Teks Sesuka Hatimu__\n\n"
                     f"✘ **Deskripsi :**\n"
-                    f"__Pesan Security Pribadi Kepada Pengguna , Jika Ada Yang Pm Anda King__\n\n"
+                    f"__Pesan Security Pribadi Kepada Pengguna , Jika Ada Yang Pm Anda Remix__\n\n"
                     f"✘ **Perintah :**\n"
                     f"`.ok` || `.terima` || `.tolak` || `.tidak`\n\n"
                     f"✘ **Set Vars :**\n"
@@ -963,7 +963,7 @@ with remix:
                     f"✘ **Penjelasan :**\n"
                     f"__Menampilkan Foto Dan Emoji Menu Help Inlinemu__\n\n"
                     f"✘ **Deskripsi :**\n"
-                    f"__Untuk Menu Help Inline Anda King__\n\n"
+                    f"__Untuk Menu Help Inline Anda Remix__\n\n"
                     f"✘ **Perintah :**\n"
                     f"`.helpme` \n\n"
                     f"✘ **Set Vars :**\n"
