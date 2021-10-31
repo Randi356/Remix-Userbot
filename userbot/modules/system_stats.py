@@ -21,7 +21,7 @@ from os import remove
 from telethon import __version__, version
 
 from datetime import datetime
-from userbot import ALIVE_EMOJI, ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, KING_TEKS_KUSTOM, StartTime, UPSTREAM_REPO_BRANCH, bot
+from userbot import ALIVE_EMOJI, ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, REMIX_TEKS_KUSTOM, StartTime, UPSTREAM_REPO_BRANCH, bot
 from userbot.events import register
 
 
@@ -232,9 +232,9 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     output = (
         f"┗┓★ ⚡𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ ★┏┛\n"
-        f"\n__**{KING_TEKS_KUSTOM}**__\n"
+        f"\n__**{REMIX_TEKS_KUSTOM}**__\n"
         f"**━━━━━━━━━━━━━━━━━━━━━**\n"
-        f"★ ** King ** \n"
+        f"★ ** Remix ** \n"
         f"☇ : `{DEFAULTUSER}` \n"
         f"★ ** Username ** \n"
         f"☇ : `@{user.username}` \n"
@@ -274,7 +274,7 @@ async def amireallyalive(alive):
     output = (
         f"  𝗫 ⚡𝙍𝙚𝙢𝙞𝙭-𝙐𝙎𝙀𝙍𝘽𝙊𝙏⚡ 𝗫 \n"
         f"╭━━━━━━━━━━━━━━━━━━━━━╮\n"
-        f"╟ 🤴 KING     : {DEFAULTUSER}\n"
+        f"╟ 🤴 REMIX     : {DEFAULTUSER}\n"
         f"╟ 🔎 Username : @{user.username}\n"
         f"▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n"
         f"╟◈ ⚙️ `Telethon :` v.{version.__version__} \n"
@@ -339,7 +339,7 @@ async def redis(alive):
         f"╟◈ 👾 `Bot Ver  :` v{BOT_VER} \n"
         f"╟◈ 📂 `Plugins  :` {len(plugins)} Plugin \n"
         f"┞╼════════════════════╾┤ \n"
-        f"├◈ **{KING_TEKS_KUSTOM}** \n"
+        f"├◈ **{REMIX_TEKS_KUSTOM}** \n"
         f"│                         \n"
         f"│   **USERBOT TELEGRAM**  \n"
         f"╰╼════════════════════╾╯ \n"
@@ -375,7 +375,7 @@ async def redis(alive):
     await asyncio.sleep(3)
     output = (
         f"★ [Remix-Userbot](https://github.com/Randi356/Remix-Userbot) **Running Userbot Active!** ★\n\n"
-        f"__**{KING_TEKS_KUSTOM}**__\n\n"
+        f"__**{REMIX_TEKS_KUSTOM}**__\n\n"
         f"{ALIVE_EMOJI} **Remix :** `{DEFAULTUSER}` \n"
         f"{ALIVE_EMOJI} **Plugins :** `{len(plugins)} Plugin` \n"
         f"{ALIVE_EMOJI} **Userbot Version :** `v{BOT_VER}` \n"
