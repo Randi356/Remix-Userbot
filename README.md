@@ -81,7 +81,7 @@ Klik tombol dibawah untuk deploy Remix Userbot milikmu`
 DON'T REMOVE CREDIT`
 ```
 # ONWER
-- [RENDY](https://github.com/Randi356/Remix-Userbot
+- [RENDY](https://github.com/Randi356/Remix-Userbot)
 
 # CREDIT
 
