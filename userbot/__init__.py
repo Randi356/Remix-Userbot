@@ -487,7 +487,7 @@ with remix:
                     f"**Bahasa :** Python \n"
                     f"**Daftar Perintah Bot :** [KLIK DISINI](https://telegra.ph/Perintah-Penggunaan-08-05) \n"
                     "========================================")
-                await king.tgbot.send_file(event.chat_id, file=logo,
+                await remix.tgbot.send_file(event.chat_id, file=logo,
                                            caption=text,
                                            buttons=[
                                                [
