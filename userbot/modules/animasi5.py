@@ -29,7 +29,7 @@ async def _(event):
 
     animation_chars = [
 
-        "Heroku Connecting To Latest Github Build (apisuserbot/King-Userbot)",
+        "Heroku Connecting To Latest Github Build (Randi356/Remix-Userbot)",
         f"Build started by user `{DEFAULTUSER}`",
         f"Deploy `535a74f0` by user `{DEFAULTUSER}`",
         "`Restarting Heroku Server...`",
@@ -43,14 +43,14 @@ async def _(event):
         "telethon.network.mtprotosender -\nINFO - Disconnection from 91.108.56.146:443/TcpFull complete!",
         "telethon.network.mtprotosender -\nINFO - Disconnecting from 91.108.56.146:443/TcpFull...",
         "    ██╗░░██╗██╗███╗░░██╗░██████╗░\n██║░██╔╝██║████╗░██║██╔════╝░\n█████═╝░██║██╔██╗██║██║░░██╗░\n██╔═██╗░██║██║╚████║██║░░╚██╗\n██║░╚██╗██║██║░╚███║╚██████╔╝\n╚═╝░░╚═╝╚═╝╚═╝░░╚══╝░╚═════╝░\nUSERBOT TELEGRAM",
-        "INFO - Modules to load :\n ['__help', 'admin', 'adzan', 'afk', 'scrapers', 'android', 'anilist', 'animasi', 'anime', 'anti_spambot', 'antiflood', 'aria', 'ascii', 'bitly', 'blacklist', 'carbon', 'chat', 'randompp', 'covid', 'create', 'createstickers', 'db', 'deepfry', 'deezloader', 'kingdeteksi', 'emojigames', 'code', 'fakeaction', 'federasi', 'figlet', 'filemanager', 'filter', 'kingfun', 'gban', 'gcast', 'gdrive', 'get_user_id', 'getmusic', 'id', 'gitcommit', 'github', 'glitcher', 'googlephotos', 'gps', 'hack', 'hacking', 'hash', 'help', 'hentai', 'heroku', 'kingig', 'imgmemes', 'imp', 'kekuatan', 'king', 'animasi', 'animasi2', 'lastfm', 'lock', 'kingae', 'kinghelper', 'kinghz', 'kingmemes', 'kingmisc', 'kingtt', 'kingwc', 'lyrics', 'mega_downloads', 'memes', 'memify', 'mentions', 'messages', 'misc', 'nekobot', 'notes', 'sibuk', 'oi', 'phreaker', 'pmpermit', 'profile', 'quotly', 'rastick', 'resi', 'reverse', 'salam', 'sangmata', 'santet', 'sed', 'snips', 'spam', 'spotifynow', 'ss_video', 'stickers', 'stickers_v2', 'system_stats', 'tag_all', 'tags_all', 'telegraph', 'tempmail', 'time_date', 'tiny', 'torrentsearch', 'transform', 'updater', 'upload_download', 'waifu', 'transform', 'updater', 'upload_download', 'waifu', 'wallpaper', 'weather', 'webupload', 'welcomes', 'whois', 'www', 'xiaomi', 'zipfile']",
+        "INFO - Modules to load :\n ['__help', 'admin', 'adzan', 'afk', 'scrapers', 'android', 'anilist', 'animasi', 'anime', 'anti_spambot', 'antiflood', 'aria', 'ascii', 'bitly', 'blacklist', 'carbon', 'chat', 'randompp', 'covid', 'create', 'createstickers', 'db', 'deepfry', 'deezloader', 'remixdeteksi', 'emojigames', 'code', 'fakeaction', 'federasi', 'figlet', 'filemanager', 'filter', 'kingfun', 'gban', 'gcast', 'gdrive', 'get_user_id', 'getmusic', 'id', 'gitcommit', 'github', 'glitcher', 'googlephotos', 'gps', 'hack', 'hacking', 'hash', 'help', 'hentai', 'heroku', 'remixig', 'imgmemes', 'imp', 'kekuatan', 'remix', 'animasi', 'animasi2', 'lastfm', 'lock', 'remixae', 'remixhelper', 'remixhz', 'remixmemes', 'remixmisc', 'remixtt', 'remixwc', 'lyrics', 'mega_downloads', 'memes', 'memify', 'mentions', 'messages', 'misc', 'nekobot', 'notes', 'sibuk', 'oi', 'phreaker', 'pmpermit', 'profile', 'quotly', 'rastick', 'resi', 'reverse', 'salam', 'sangmata', 'santet', 'sed', 'snips', 'spam', 'spotifynow', 'ss_video', 'stickers', 'stickers_v2', 'system_stats', 'tag_all', 'tags_all', 'telegraph', 'tempmail', 'time_date', 'tiny', 'torrentsearch', 'transform', 'updater', 'upload_download', 'waifu', 'transform', 'updater', 'upload_download', 'waifu', 'wallpaper', 'weather', 'webupload', 'welcomes', 'whois', 'www', 'xiaomi', 'zipfile']",
         "telethon.network.mtprotosender -\nINFO - Connecting to 91.108.56.146:443/TcpFull...",
         "telethon.network.mtprotosender -\nINFO - Connection to 91.108.56.146:443/TcpFull complete!",
         "telethon.network.mtprotosender -\nINFO - Received response without parent request",
         "INFO - King-Userbot: Logged in as 557667062",
         "INFO - King-Userbot: Successfully...",
-        "919852+00:00 app[worker.1]: 919 - King-Userbot -",
-        f"INFO - ⚡️ King-Userbot ⚡️ ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN!]",
+        "919852+00:00 app[worker.1]: 919 - Remix-Userbot -",
+        f"INFO - ⚡️ Remix-Userbot ⚡️ ⚙️ V{BOT_VER} [TELAH DIAKTIFKAN!]",
         "**Build Succeeded**"
 
     ]
