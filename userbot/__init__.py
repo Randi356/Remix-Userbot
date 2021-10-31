@@ -640,7 +640,7 @@ with remix:
                     title="USERBOT TELEGRAM",
                     description="Remix-Userbot | Telethon",
                     url="https://heroku.com",
-                    text="**Remix-UserBot**\n➖➖➖➖➖➖➖➖➖➖\n• **Support Chat :** [KLIK DISINI](https://t.me/StaryWild)\n• **Support Channel :** [KLIK DISINI](https://t.me/githubxsvshacker)\n➖➖➖➖➖➖➖➖➖➖\n\n⚠️ DISCLAIMER ⚠️\n\n• Baca Peraturan [Disini](https://telegra.ph/Peraturan-08-04)",
+                    text="**Remix-UserBot**\n➖➖➖➖➖➖➖➖➖➖\n• **Support Chat :** [KLIK DISINI](https://t.me/StaryWild)\n• **Support Channel :** [KLIK DISINI](https://t.me/githubxsvshacker)\n➖➖➖➖➖➖➖➖➖➖\n\n⚠️ DISCLAIMER ⚠️\n\n• Baca Peraturan [Disini](https://telegra.ph/Rendy-10-31)",
                     buttons=[
                         [
                             custom.Button.url(
