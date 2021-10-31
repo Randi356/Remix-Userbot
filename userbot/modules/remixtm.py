@@ -29,7 +29,7 @@ async def _(event):
         except YouBlockedUserError:
             await event.edit("`Mohon buka blokir` @TempMailBot `lalu coba lagi`")
             return
-        await event.edit(f"**REMIX TEMPMAIL** ~ `{response.message.message}`\n\n[KLIK DISINI UNTUK VERIFIKASI]({kinguserbot})")
+        await event.edit(f"**REMIX TEMPMAIL** ~ `{response.message.message}`\n\n[KLIK DISINI UNTUK VERIFIKASI]({remixuserbot})")
 
 
 # Apis Ganteng
