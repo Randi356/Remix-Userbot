@@ -74,11 +74,12 @@ Klik tombol dibawah untuk deploy Remix Userbot milikmu`
 
 <br>
 </p>
-````````````````````````
-- `⚠️WARNING⚠️`
-````````````````````````
-- `DON'T REMOVE CREDIT`
-````````````````````````
+
+```
+⚠️WARNING⚠️`
+
+DON'T REMOVE CREDIT`
+```
 # ONWER
 - [RENDY](https://github.com/Randi356/Remix-Userbot
 
