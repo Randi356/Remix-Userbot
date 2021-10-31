@@ -488,22 +488,22 @@ with remix:
                     f"**Daftar Perintah Bot :** [KLIK DISINI](https://telegra.ph/Perintah-Penggunaan-08-05) \n"
                     "========================================")
                 await remix.tgbot.send_file(event.chat_id, file=logo,
-                                           caption=text,
-                                           buttons=[
-                                               [
-                                                   custom.Button.url(
-                                                       text="➕ Tambahkan Bot Ini Ke Grup ➕",
-                                                       url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-                                               [custom.Button.url(
-                                                   text="Support Chat",
-                                                   url="https://t.me/StaryWild"),
-                                                   custom.Button.url(
-                                                       text="Support Channel",
-                                                       url="https://t.me/githubxsvshacker"
-                                               )
-                                               ]
-                                           ]
-                                           )
+                                            caption=text,
+                                            buttons=[
+                                                [
+                                                    custom.Button.url(
+                                                        text="➕ Tambahkan Bot Ini Ke Grup ➕",
+                                                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                                                [custom.Button.url(
+                                                    text="Support Chat",
+                                                    url="https://t.me/StaryWild"),
+                                                 custom.Button.url(
+                                                    text="Support Channel",
+                                                    url="https://t.me/githubxsvshacker"
+                                                )
+                                                ]
+                                            ]
+                                            )
 
         @remix.tgbot.on(events.NewMessage(pattern=r"/repo"))
         async def handler(event):
