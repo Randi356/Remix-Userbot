@@ -75,6 +75,10 @@ Klik tombol dibawah untuk deploy King Userbot milikmu`
 <br>
 </p>
 
+# CREDIT
+
+-[APIP KING](https://github.com/apisuserbot/King-Userbot)
+
 ## 
 ## License
 Licensed under [Raphielscape Public License](https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE) - Version 1.d, February 2020
