@@ -170,7 +170,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # untuk perintah .kingon
-KING_TEKS_KUSTOM = os.environ.get("KING_TEKS_KUSTOM", None)
+REMIX_TEKS_KUSTOM = os.environ.get("REMIX_TEKS_KUSTOM", None)
 
 # Default .alive name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -374,7 +374,7 @@ USERS = {}
 COUNT_PM = {}
 ENABLE_KILLME = True
 LASTMSG = {}
-king = bot
+remix = bot
 CMD_HELP = {}
 ISAFK = False
 AFKREASON = None
@@ -430,11 +430,11 @@ def paginate_help(page_number, loaded_modules, prefix):
 
 
 # -----------------------------------------------File------------------------------------>
-king = bot
+remix = bot
 
-with king:
+with remix:
     try:
-        king.tgbot = tgbot = TelegramClient(
+        remix.tgbot = tgbot = TelegramClient(
             "BOT_TOKEN",
             api_id=API_KEY,
             api_hash=API_HASH).start(
@@ -452,7 +452,7 @@ with king:
 
 # ------------------------------ChatAction--------------->
 
-        @king.tgbot.on(events.ChatAction)
+        @remix.tgbot.on(events.ChatAction)
         async def handler(event):
             if event.user_joined or event.user_added:
                 u = await event.client.get_entity(event.chat_id)
@@ -465,13 +465,13 @@ with king:
                     buttons=[
                         [
                             Button.url("Tutorial Userbot",
-                                       "https://t.me/KingUserbotSupport")],
+                                       "https://t.me/StaryWild")],
                     ]
                 )
 
 # ====================================InlineHandler===================================== #
 
-        @king.tgbot.on(events.NewMessage(pattern=r"/start"))
+        @remix.tgbot.on(events.NewMessage(pattern=r"/start"))
         async def handler(event):
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
@@ -505,7 +505,7 @@ with king:
                                            ]
                                            )
 
-        @king.tgbot.on(events.NewMessage(pattern=r"/repo"))
+        @remix.tgbot.on(events.NewMessage(pattern=r"/repo"))
         async def handler(event):
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
@@ -523,25 +523,25 @@ with king:
                     ]
                 )
 
-        @king.tgbot.on(events.NewMessage(pattern=r"/ping"))
+        @remix.tgbot.on(events.NewMessage(pattern=r"/ping"))
         async def handler(event):
             if event.message.from_id != uid:
                 start = datetime.now()
                 end = datetime.now()
                 ms = (end - start).microseconds / 1000
-                await king.tgbot.send_message(
+                await remix.tgbot.send_message(
                     event.chat_id,
                     f"**PONG !!**\n `{ms}ms`",
                 )
 
-        @king.tgbot.on(events.NewMessage(pattern=r"/alive"))
+        @remix.tgbot.on(events.NewMessage(pattern=r"/alive"))
         async def handler(event):
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.message.get_sender()
                 text = (
                     f"**Pesan Alive**\n\n"
-                    f"__**{KING_TEKS_KUSTOM}**__ \n\n"
+                    f"__**{REMIX_TEKS_KUSTOM}**__ \n\n"
                     "=============================\n"
                     f"       **Alive Bot** \n"
                     "=============================\n"
@@ -554,7 +554,7 @@ with king:
                     "=============================\n"
                     f"    **USERBOT TELEGRAM** \n"
                     "=============================")
-                await king.tgbot.send_file(event.chat_id, file=alive,
+                await remix.tgbot.send_file(event.chat_id, file=alive,
                                            caption=text,
                                            buttons=[
                                                [
@@ -569,7 +569,7 @@ with king:
                                            ]
                                            )
 
-        @king.tgbot.on(events.NewMessage(pattern=r"/donasi"))
+        @remix.tgbot.on(events.NewMessage(pattern=r"/donasi"))
         async def handler(event):
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
@@ -579,7 +579,7 @@ with king:
                     f"Ingin donasi atau menyumbang uang ini ke developer kami\n\n"
                     f"• **Notes : Donasi Seikhlasnya** \n\n"
                     f"**Terimakasih** ")
-                await king.tgbot.send_file(event.chat_id, file=donate,
+                await remix.tgbot.send_file(event.chat_id, file=donate,
                                            caption=text,
                                            buttons=[
                                                [
@@ -591,7 +591,7 @@ with king:
                                            ]
                                            )
 
-        @king.tgbot.on(events.NewMessage(pattern=r"/string"))
+        @remix.tgbot.on(events.NewMessage(pattern=r"/string"))
         async def handler(event):
             if event.message.from_id != uid:
                 reply = "**STRING SESSION**"
@@ -608,19 +608,19 @@ with king:
                     ]
                 )
 
-        @king.tgbot.on(events.NewMessage(pattern=r"/profile"))
+        @remix.tgbot.on(events.NewMessage(pattern=r"/profile"))
         async def handler(event):
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(f"**Profile Chat**\n\n**Nama Chat :** [{get_display_name(u)}](tg://user?id={u.id})\n**ID Chat :** {u.id}")
 
-        @king.tgbot.on(events.InlineQuery)  # pylint:disable=E0602
+        @remix.tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
             query = event.text
             if event.query.user_id == uid and query.startswith(
-                    "@KingUserbotSupport"):
+                    "@StaryWild"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=logo,
@@ -630,7 +630,7 @@ with king:
                     ),
                     buttons=buttons,
                 )
-            elif query.startswith("king_bot"):
+            elif query.startswith("remixuserbot_bot"):
                 result = builder.article(
                     title="USERBOT TELEGRAM",
                     buttons=[],
@@ -656,7 +656,7 @@ with king:
 
 # =============================================Button========================================= #
 
-        @king.tgbot.on(
+        @remix.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"opener")
             )
@@ -675,7 +675,7 @@ with king:
                 reply_pop_up_alert = f"🔒 Code Tersembunyi 🔒\n\nUserbot Milik {ALIVE_NAME} Yang Hanya Bisa Melihat Code Tersembunyi"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @remix.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"settings")
             )
@@ -701,7 +701,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @remix.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"alive_inline")
             )
@@ -709,11 +709,11 @@ with king:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 text = (
-                    f"__**{KING_TEKS_KUSTOM}**__ \n\n"
+                    f"__**{REMIX_TEKS_KUSTOM}**__ \n\n"
                     "============================\n"
                     f"      **Alive Inline** \n"
                     "============================\n"
-                    f"`King      :` {DEFAULTUSER} \n"
+                    f"`Remix      :` {DEFAULTUSER} \n"
                     f"`Branch    :` {UPSTREAM_REPO_BRANCH} \n"
                     f"`Versi Bot :` {BOT_VER} \n"
                     f"`Plugins   :` {len(plugins)} \n"
@@ -740,7 +740,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @remix.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"database_inline")
             )
@@ -766,7 +766,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @remix.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"helpme_next\((.+?)\)")
             )
@@ -783,7 +783,7 @@ with king:
                 reply_pop_up_alert = f"🔒 Code Tersembunyi 🔒\n\nUserbot Milik {ALIVE_NAME} Yang Hanya Bisa Melihat Code Tersembunyi"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @remix.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"helpme_close\((.+?)\)")
             )
@@ -807,7 +807,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @remix.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"helpme_prev\((.+?)\)")
             )
@@ -825,7 +825,7 @@ with king:
                 reply_pop_up_alert = f"🔒 Code Tersembunyi 🔒\n\nUserbot Milik {ALIVE_NAME} Yang Hanya Bisa Melihat Code Tersembunyi"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(events.CallbackQuery(data=b"info_plugins"))
+        @remix.tgbot.on(events.CallbackQuery(data=b"info_plugins"))
         async def info(event):
             text = (
                 f"Info Plugins \n\n"
@@ -834,7 +834,7 @@ with king:
                 f"Contoh : Ketik .help atau bisa juga .help <nama plugin>")
             await event.answer(text, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @remix.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"menu_inline")
             )
@@ -858,7 +858,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @remix.tgbot.on(
             events.callbackquery.CallbackQuery(
                 data=re.compile(rb"menu_vars")
             )
@@ -882,7 +882,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @remix.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"alive_vars")
             )
@@ -891,7 +891,7 @@ with king:
             if event.query.user_id == uid:
                 text = (
                     f"**✘ Plugins :** `Alive`\n"
-                    f"** King : ** {DEFAULTUSER}\n\n"
+                    f"** Remix : ** {DEFAULTUSER}\n\n"
                     f"✘ **Penjelasan :**\n"
                     f"__Menampilkan Alive Punya Kamu, Dengan Teks Dan Foto Yang Bagus Dan Meriah__\n\n"
                     f"✘ **Deskripsi :**\n"
@@ -916,7 +916,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @remix.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"pmpermit_vars")
             )
@@ -925,7 +925,7 @@ with king:
             if event.query.user_id == uid:
                 text = (
                     f"**✘ Plugins :** `Pmpermit`\n"
-                    f"** King : ** {DEFAULTUSER}\n\n"
+                    f"** Remix : ** {DEFAULTUSER}\n\n"
                     f"✘ **Penjelasan :**\n"
                     f"__Untuk Pesan Pribadi (Pmpermit) Kamu , Dan Bisa Set Dengan Foto Dan Teks Sesuka Hatimu__\n\n"
                     f"✘ **Deskripsi :**\n"
@@ -950,7 +950,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @remix.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"inline_vars")
             )
@@ -959,7 +959,7 @@ with king:
             if event.query.user_id == uid:
                 text = (
                     f"**✘ Menu Help Inline**\n"
-                    f"** King : ** {DEFAULTUSER}\n\n"
+                    f"** Remix : ** {DEFAULTUSER}\n\n"
                     f"✘ **Penjelasan :**\n"
                     f"__Menampilkan Foto Dan Emoji Menu Help Inlinemu__\n\n"
                     f"✘ **Deskripsi :**\n"
@@ -985,7 +985,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(events.CallbackQuery(data=b"close"))
+        @remix.tgbot.on(events.CallbackQuery(data=b"close"))
         async def close(event):
             if event.query.user_id == uid:
                 text = "**Menu Ditutup!**"
@@ -1002,7 +1002,7 @@ with king:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nAnda Tidak Mempunyai Hak Untuk Menekan Tombol Button Ini"
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @king.tgbot.on(
+        @remix.tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(b"ub_modul_(.*)")
             )
