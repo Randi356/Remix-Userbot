@@ -114,7 +114,7 @@ async def on_afk(event):
                 f"**Karena :** `{reason}`")
         else:
             message_to_reply = (
-                f"**Maaf King {ALIVE_NAME} Sedang AFK**\n\n**Sejak :** `{total_afk_time}` **Yang Lalu**"
+                f"**Maaf Remix {ALIVE_NAME} Sedang AFK**\n\n**Sejak :** `{total_afk_time}` **Yang Lalu**"
             )
         try:
             if pic.endswith((".tgs", ".webp")):
@@ -180,30 +180,30 @@ async def _(event):
                     await bot.send_message(event.chat_id, file=pic)
                     await bot.send_message(
                         event.chat_id,
-                        f"**King {ALIVE_NAME} Telah AFK**\n**Karena :** `{reason}`",
+                        f"**Remix {ALIVE_NAME} Telah AFK**\n**Karena :** `{reason}`",
                     )
                 else:
                     await bot.send_message(
                         event.chat_id,
-                        f"**King {ALIVE_NAME} Telah AFK**\n**Karena :** `{reason}`",
+                        f"**Remix {ALIVE_NAME} Telah AFK**\n**Karena :** `{reason}`",
                         file=pic,
                     )
             except BaseException:
                 await bot.send_message(
                     event.chat_id,
-                    f"**King {ALIVE_NAME} Telah AFK**\n**Karena :** `{reason}`",
+                    f"**Remix {ALIVE_NAME} Telah AFK**\n**Karena :** `{reason}`",
                 )
         else:
             try:
                 if pic.endswith((".tgs", ".webp")):
                     await bot.send_message(event.chat_id, file=pic)
                     await bot.send_message(
-                        event.chat_id, f"**King {ALIVE_NAME} Telah AFK...**"
+                        event.chat_id, f"**Remix {ALIVE_NAME} Telah AFK...**"
                     )
                 else:
                     await bot.send_message(
                         event.chat_id,
-                        f"**King {ALIVE_NAME} Telah AFK...**",
+                        f"**Remix {ALIVE_NAME} Telah AFK...**",
                         file=pic,
                     )
             except BaseException:
