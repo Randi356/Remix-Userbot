@@ -1,5 +1,6 @@
 # Based Plugins
-# Ported for Remix-Userbot By kontol/memek
+# owner rendy
+# credit apip king userbot
 
 from telethon import events
 from userbot.events import register
