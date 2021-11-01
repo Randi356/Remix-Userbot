@@ -1,4 +1,5 @@
-# Ported info by Apis
+# owner rendy
+# credit Apis king userbot
 # Thanks Ultroid limited
 
 from telethon import events
@@ -8,7 +9,7 @@ from userbot import bot, CMD_HELP
 from userbot.events import register
 
 
-@register(outgoing=True, pattern=r"^\.info(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.limit(?: |$)(.*)")
 async def _(event):
     await event.edit("`Mengecek Info Akun Anda...`")
     async with bot.conversation("@SpamBot") as conv:
@@ -27,8 +28,8 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "info": "**✘ Plugin :** `Info`\
-        \n\n  •  **Perintah :** `.info`\
+        "limit": "**✘ Plugin :** `Limit`\
+        \n\n  •  **Perintah :** `.limit`\
         \n  •  **Function : **Untuk mengecek info akun Anda\
     "
     }
