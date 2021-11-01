@@ -1,4 +1,5 @@
-# Ported by @PacarFerdilla
+# owner rendy
+# credit apip king userbot
 # Thanks for catuserbot (c) copyright 2021
 
 import asyncio
