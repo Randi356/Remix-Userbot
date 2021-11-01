@@ -59,7 +59,7 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "king": "**✘ Plugin :** `Remix`\
+        "remix": "**✘ Plugin :** `Remix`\
         \n\n  •  **Perintah :** `.kontol`\
         \n  •  **Function : **Perkenalan Userbot Remix\
         \n\n  •  **Perintah :** `.sadboy`\
