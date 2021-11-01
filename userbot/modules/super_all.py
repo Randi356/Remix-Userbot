@@ -31,10 +31,10 @@ async def allban(event):
 
 @register(outgoing=True, pattern="^.xkick(?: |$)(.*)")
 async def allkick(event):
-    kinguser = await event.get_chat()
-    kingget = await event.client.get_me()
-    admin = kinguser.admin_rights
-    creator = kinguser.creator
+    remixuser = await event.get_chat()
+    remixget = await event.client.get_me()
+    admin = remixuser.admin_rights
+    creator = remixuser.creator
     if not admin and not creator:
         await event.edit("`Anda Tidak Mempunyai Hak`")
         return
@@ -42,7 +42,7 @@ async def allkick(event):
 
     everyone = await event.client.get_participants(event.chat_id)
     for user in everyone:
-        if user.id == kingget.id:
+        if user.id == remixget.id:
             pass
         try:
             await event.client(EditBannedRequest(event.chat_id, int(user.id), ChatBannedRights(until_date=None, view_messages=True)))
