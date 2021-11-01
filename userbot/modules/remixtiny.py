@@ -1,5 +1,6 @@
 # Tiny stickers
 # Ported by Apis (King-Userbot)
+# owner rendy
 
 
 # Apis Ganteng
