@@ -1,9 +1,5 @@
-# Ported by X_ImFine
-# Mukalu Kek Kontol
-# Yang Ubah Anak Tolol
-# Apis tydack pro
-# Feri pro
-# Abdul pro
+# Credit apip king userbot
+# owner rendy
 
 from telethon.tl.types import (
     MessageEntityMentionName)
