@@ -116,7 +116,7 @@ async def set_var(var):
                 "**Menambahkan Config Vars**:\n"
                 f"`{variable}` **=** `{value}`"
             )
-        await var.edit("`King Menambahkan Config Vars...`")
+        await var.edit("`Remix Menambahkan Config Vars...`")
     heroku_var[variable] = value
 
 
