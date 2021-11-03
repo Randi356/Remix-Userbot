@@ -12,12 +12,12 @@ from telethon.tl.types import ChatAdminRights
 from userbot import CMD_HELP
 from userbot.events import register
 
-NO_ADMIN = "`King Gagal Dikarenakan Bukan Admin :)`"
+NO_ADMIN = "`Remix Gagal Dikarenakan Bukan Admin :)`"
 
 
 async def get_call(event):
-    king = await event.client(getchat(event.chat_id))
-    user = await event.client(getvc(king.full_chat.call))
+    remix = await event.client(getchat(event.chat_id))
+    user = await event.client(getvc(remix.full_chat.call))
     return user.call
 
 
