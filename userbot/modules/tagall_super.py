@@ -25,7 +25,7 @@ class FlagContainer:
     is_active = False
 
 
-@register(remix_cmd(outgoing=True, pattern=r"mention(?: |$)(.*)"))
+@register(remix_cmd(outgoing=True, pattern=r".mention(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from:
         return
@@ -38,7 +38,7 @@ async def _(event):
     await bot.send_message(chat, mentions, reply_to=event.message.reply_to_msg_id)
 
 
-@register(remix_cmd(outgoing=True, pattern=r"emojitag(?: |$)(.*)"))
+@register(remix_cmd(outgoing=True, pattern=r".emojitag(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from or FlagContainer.is_active:
         return
@@ -81,7 +81,7 @@ async def _(event):
         FlagContainer.is_active = False
 
 
-@register(remix_cmd(outgoing=True, pattern=r"all(?: |$)(.*)"))
+@register(remix_cmd(outgoing=True, pattern=r".all(?: |$)(.*)"))
 async def _(event):
     if event.fwd_from or FlagContainer.is_active:
         return
@@ -127,11 +127,11 @@ async def _(event):
 CMD_HELP.update(
     {
         "supertag": f"**Plugin : **`supertag`\
-        \n\n  •  **Syntax :** `{cmd}mention`\
+        \n\n  •  **Syntax :** `.mention`\
         \n  •  **Function : **Untuk Menmention semua anggota yang ada di group tanpa menyebut namanya.\
-        \n\n  •  **Syntax :** `{cmd}all` <text>\
+        \n\n  •  **Syntax :** `.all` <text>\
         \n  •  **Function : **Untuk Mengetag semua anggota Maksimal 3.000 orang yg akan ditag di grup untuk mengurangi flood wait telegram.\
-        \n\n  •  **Syntax :** `{cmd}emojitag` <text>\
+        \n\n  •  **Syntax :** `.emojitag` <text>\
         \n  •  **Function : **Untuk Mengetag semua anggota di grup dengan random emoji berbeda.\
         \n\n  •  **NOTE :** Untuk Memberhentikan Tag ketik `.restart`\
     "
