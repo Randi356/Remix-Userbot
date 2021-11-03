@@ -146,7 +146,7 @@ Connected to server...
 @register(outgoing=True, pattern=r"^\.lirik (.*)")
 async def original(event):
     if not event.pattern_match.group(1):
-        return await event.edit("King , Beri Saya Sebuah Judul Lagu Untuk Mencari Lirik.\n**Contoh** : `.lyrics` <Judul Lagu>")
+        return await event.edit("Remix , Beri Saya Sebuah Judul Lagu Untuk Mencari Lirik.\n**Contoh** : `.lyrics` <Judul Lagu>")
     kenzo = event.pattern_match.group(1)
     event = await event.edit("`🔍 Sedang Mencari Lirik Lagu...`")
     dc = random.randrange(1, 3)
