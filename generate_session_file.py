@@ -2,7 +2,7 @@
 #
 # Licensed under the Raphielscape Public License, Version 1.b (the "License");
 # you may not use this file except in compliance with the License.
-#
+# dev
 # This script wont run your bot, it just generates a session.
 
 from telethon import TelegramClient
