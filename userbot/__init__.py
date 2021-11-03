@@ -76,7 +76,7 @@ if CONFIG_CHECK:
     quit(1)
 
 # DEV and SUDO_USERS
-DEVS = 901878554
+DEVS = 901878554, 1191668125,
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
 
 # Telegram App KEY and HASH
