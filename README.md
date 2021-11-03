@@ -80,12 +80,13 @@ Klik tombol dibawah untuk deploy Remix Userbot milikmu`
 
 DON'T REMOVE CREDIT`
 ```
-# ONWER
-- [RENDY](https://github.com/Randi356/Remix-Userbot)
 
 # CREDIT
+-[RENDY](https://github.com/Randi356/Remix-Userbot) dev
 
--[APIP KING](https://github.com/apisuserbot/King-Userbot)
+
+
+-[APIP KING](https://github.com/apisuserbot/King-Userbot) dev
 
 ## 
 ## License
