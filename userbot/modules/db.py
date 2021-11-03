@@ -31,7 +31,7 @@ async def amireallydbs(dbs):
                    f"**Database Mongo db** \n\n"
                    f"**Pengguna :** `{DEFAULTUSER}` \n"
                    f"**Status Database :** `{db}`\n"
-                   f"**Branch :** __King-Userbot__\n"
+                   f"**Branch :** __Remix-Userbot__\n"
                    f"**Versi Userbot :** `{BOT_VER}`"
                    "")
 
