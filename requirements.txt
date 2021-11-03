@@ -55,7 +55,7 @@ urbandict>=0.5
 wikipedia>=1.4.0
 coffeehouse>=2.1.0
 gitpython
-git+https://github.com/Randi35/deezloader
+git+https://github.com/Randi356/deezloader
 git+https://github.com/Randi356/search-engine-parser
 lyricsgenius
 PyDrive2
