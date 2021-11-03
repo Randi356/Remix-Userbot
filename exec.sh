@@ -21,7 +21,7 @@ elif [ ${1} == "-d" ] || [ ${1} == "--daemonize" ] ; then
 	cd ${RUNDIR}
 	exit 0
 elif [ ${1} == "-h" ] || [ ${1} == "--help" ] ; then
-	echo -e "Remi-Userbot"
+	echo -e "Remix-Userbot"
 	echo -e  "Licensed under Raphielscape Public License"
 	echo -e "\nUsage:"
 	echo -e "[no arguments] || -x -- Run in the foreground, stdout is the logcat"
