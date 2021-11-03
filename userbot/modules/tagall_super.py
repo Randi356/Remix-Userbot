@@ -30,9 +30,9 @@ async def _(event):
     if event.fwd_from:
         return
     await event.delete()
-    query = event.pattern_match.group(1)
-    mentions = f"@all {query}"
-    chat = await event.get_input_chat()
+    query=event.pattern_match.group(1)
+    mentions=f"@all {query}"
+    chat=await event.get_input_chat()
     async for x in bot.iter_participants(chat, 100500):
         mentions += f"[\u2063](tg://user?id={x.id} {query})"
     await bot.send_message(chat, mentions, reply_to=event.message.reply_to_msg_id)
@@ -45,9 +45,9 @@ async def _(event):
     try:
         FlagContainer.is_active = True
 
-        args = event.message.text.split(" ", 1)
-        text = args[1] if len(args) > 1 else None
-        chat = await event.get_input_chat()
+        args=event.message.text.split(" ", 1)
+        text=args[1] if len(args) > 1 else None
+        chat=await event.get_input_chat()
         await event.delete()
 
         tags = list(
@@ -88,9 +88,9 @@ async def _(event):
     try:
         FlagContainer.is_active = True
 
-        args = event.message.text.split(" ", 1)
-        text = args[1] if len(args) > 1 else None
-        chat = await event.get_input_chat()
+        args=event.message.text.split(" ", 1)
+        text=args[1] if len(args) > 1 else None
+        chat=await event.get_input_chat()
         await event.delete()
 
         tags = list(
@@ -127,11 +127,11 @@ async def _(event):
 CMD_HELP.update(
     {
         "supertag": f"**Plugin : **`supertag`\
-        \n\n  •  **Syntax :** `.mention`\
+        \n\n  •  **Perintah :** `.mention`\
         \n  •  **Function : **Untuk Menmention semua anggota yang ada di group tanpa menyebut namanya.\
-        \n\n  •  **Syntax :** `.all` <text>\
+        \n\n  •  **Perintah :** `.all` <text>\
         \n  •  **Function : **Untuk Mengetag semua anggota Maksimal 3.000 orang yg akan ditag di grup untuk mengurangi flood wait telegram.\
-        \n\n  •  **Syntax :** `.emojitag` <text>\
+        \n\n  •  **Perintah :** `.emojitag` <text>\
         \n  •  **Function : **Untuk Mengetag semua anggota di grup dengan random emoji berbeda.\
         \n\n  •  **NOTE :** Untuk Memberhentikan Tag ketik `.restart`\
     "
