@@ -82,7 +82,7 @@ DON'T REMOVE CREDIT`
 ```
 
 # CREDIT
--[RENDY](https://github.com/Randi356/Remix-Userbot) dev
+-[RENDY](https://github.com/Randi356/Remix-Userbot) magisk
 
 
 
