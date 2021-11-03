@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # (c) https://t.me/TelethonChat/37677 and SpEcHiDe
-#
+# dev
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 #
