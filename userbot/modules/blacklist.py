@@ -26,7 +26,7 @@ async def on_new_message(event):
             try:
                 await event.delete()
             except Exception:
-                await event.reply("`King, Anda Tidak Punya Izin Untuk Menghapus Pesan Disini`")
+                await event.reply("`Remix, Anda Tidak Punya Izin Untuk Menghapus Pesan Disini`")
                 await sleep(1)
                 await reply.delete()
                 sql.rm_from_blacklist(event.chat_id, snip.lower())
@@ -84,7 +84,7 @@ async def on_delete_blacklist(rmbl):
         if sql.rm_from_blacklist(rmbl.chat_id, trigger.lower()):
             successful += 1
     if not successful:
-        await rmbl.edit("`King,` **{}** `Tidak Ada Di Blacklist`".format(text))
+        await rmbl.edit("`Remix,` **{}** `Tidak Ada Di Blacklist`".format(text))
     else:
         await rmbl.edit("`Sukses Menghapus` **{}** `Di Blacklist`".format(text))
 
