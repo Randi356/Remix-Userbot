@@ -25,7 +25,7 @@ class FlagContainer:
     is_active = False
 
 
-@register(outgoing=True, pattern=r".mention(?: |$)(.*)"))
+@register(outgoing=True, pattern="^.mention$") 
 async def _(event):
     if event.fwd_from:
         return
@@ -38,7 +38,7 @@ async def _(event):
     await bot.send_message(chat, mentions, reply_to = event.message.reply_to_msg_id)
 
 
-@ register(outgoing = True, pattern = r".emojitag(?: |$)(.*)"))
+@register(outgoing=True, pattern="^.emojitag$") 
 async def _(event):
     if event.fwd_from or FlagContainer.is_active:
         return
@@ -81,7 +81,7 @@ async def _(event):
         FlagContainer.is_active = False
 
 
-@register(outgoing=True, pattern=r".all(?: |$)(.*)"))
+@register(outgoing=True, pattern="^.all$") 
 async def _(event):
     if event.fwd_from or FlagContainer.is_active:
         return
