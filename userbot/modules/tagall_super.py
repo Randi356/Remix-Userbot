@@ -25,32 +25,32 @@ class FlagContainer:
     is_active = False
 
 
-@register(outgoing=True, pattern="^.mention$") 
+@register(outgoing=True, pattern="^.mention$")
 async def _(event):
     if event.fwd_from:
         return
     await event.delete()
-    query=event.pattern_match.group(1)
-    mentions=f"@all {query}"
-    chat=await event.get_input_chat()
+    query = event.pattern_match.group(1)
+    mentions = f"@all {query}"
+    chat = await event.get_input_chat()
     async for x in bot.iter_participants(chat, 100500):
         mentions += f"[\u2063](tg://user?id={x.id} {query})"
-    await bot.send_message(chat, mentions, reply_to = event.message.reply_to_msg_id)
+    await bot.send_message(chat, mentions, reply_to=event.message.reply_to_msg_id)
 
 
-@register(outgoing=True, pattern="^.emojitag$") 
+@register(outgoing=True, pattern="^.emojitag$")
 async def _(event):
     if event.fwd_from or FlagContainer.is_active:
         return
     try:
-        FlagContainer.is_active=True
+        FlagContainer.is_active = True
 
-        args=event.message.text.split(" ", 1)
-        text=args[1] if len(args) > 1 else None
-        chat=await event.get_input_chat()
+        args = event.message.text.split(" ", 1)
+        text = args[1] if len(args) > 1 else None
+        chat = await event.get_input_chat()
         await event.delete()
 
-        tags=list(
+        tags = list(
             map(
                 lambda m: f"[{random.choice(emoji)}](tg://user?id={m.id})",
                 await event.client.get_participants(chat),
@@ -81,7 +81,7 @@ async def _(event):
         FlagContainer.is_active = False
 
 
-@register(outgoing=True, pattern="^.all$") 
+@register(outgoing=True, pattern="^.all$")
 async def _(event):
     if event.fwd_from or FlagContainer.is_active:
         return
