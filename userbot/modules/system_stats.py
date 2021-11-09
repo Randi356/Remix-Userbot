@@ -246,7 +246,7 @@ async def amireallyalive(alive):
         f"╰╼━━━━━━━━━━━━━━━━━━━━━\n"
         f"• **Copyright :** [Remix Userbot Company LLC](https://github.com/Randi356/Remix-Userbot) \n"
         f"• **License :** [Raphielscape Version 1.d](https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE) \n"
-        f"• **Support :** [USERBOT TELEGRAM](https://t.me/StaryWild) ")
+        f"• **Support :** [USERBOT TELEGRAM](https://t.me/RemixSupport) ")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -285,7 +285,7 @@ async def amireallyalive(alive):
         f"▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n"
         f"• **Copyright :** [Remix Userbot Company LLC](https://github.com/Randi356/Remix-Userbot) \n"
         f"• **License :** [Raphielscape Version 1.d](https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE) \n"
-        f"• **Support :** [USERBOT TELEGRAM](https://t.me/StaryWild) \n"
+        f"• **Support :** [USERBOT TELEGRAM](https://t.me/RemixSupport) \n"
         f"━━━━━━━━━━━━━━━━━━━━━╯")
     if ALIVE_LOGO:
         try:
@@ -381,7 +381,7 @@ async def redis(alive):
         f"{ALIVE_EMOJI} **Userbot Version :** `v{BOT_VER}` \n"
         f"{ALIVE_EMOJI} **Python Version :** `v{python_version()}` \n"
         f"{ALIVE_EMOJI} **Telethon Version :** `v{version.__version__}` \n\n"
-        f"[Support Chat](https://t.me/StaryWild) | [Support Channel](https://t.me/githubxsvshacker) | [License](https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE)")
+        f"[Support Chat](https://t.me/RemixSupport) | [Support Channel](https://t.me/githubxsvshacker) | [License](https://github.com/Randi356/Remix-Userbot/blob/Remix-Userbot/LICENSE)")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
