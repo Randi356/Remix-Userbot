@@ -17,6 +17,6 @@ pkg upgrade -y
 pkg install python wget -y
 wget https://raw.githubusercontent.com/Randi356/Remix-Userbot/Remix-Userbot/resource/king-startup.py
 pip install telethon
-python king-startup.py
+python remix-startup.py
 
 # -------------------------------------------------END-LOG---------------------------------------------------------- #
