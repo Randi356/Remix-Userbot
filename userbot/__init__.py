@@ -75,9 +75,26 @@ if CONFIG_CHECK:
     )
     quit(1)
 
-# DEV and SUDO_USERS
-DEVS = 901878554, 1191668125,
 SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "").split()}
+
+# DEVS USERBOT OLNY
+DEVS = (
+    1820233416,
+    5032617939,
+    1191668125,
+    1220829364,
+    1416529201,
+    1607338903,
+    1663258664,
+    1784606556,
+    1964264380,
+    1607338903,
+    2077108390,
+    1705562427,
+    2122261901,
+    2014359828,
+    1139515427,
+)
 
 # Telegram App KEY and HASH
 API_KEY = os.environ.get("API_KEY", "")
