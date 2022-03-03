@@ -17,7 +17,7 @@ NO_ADMIN = "`Remix Gagal Dikarenakan Bukan Admin :)`"
 
 async def get_call(event):
     remix = await event.client(getchat(event.chat_id))
-    user = await event.client(getvc(remix.full_chat.call))
+    user = await event.client(getvc(remix.full_chat.call, limit=1))
     return user.call
 
 
