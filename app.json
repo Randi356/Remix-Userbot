@@ -10,8 +10,8 @@
     "python"
   ],
   "repository": "https://github.com/Randi356/Remix-Userbot",
-  "telegram": "https://t.me/FlashProSpeed",
-  "success_url": "https://t.me/StaryWild",
+  "telegram": "https://t.me/rencprx",
+  "success_url": "https://t.me/VegetaSupports",
   "stack": "container",
   "env": {
     "API_KEY": {
